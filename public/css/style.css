@@ -1,0 +1,131 @@
+html, body, ul {
+    margin: 0; padding: 0;
+}
+
+* { box-sizing: border-box }
+
+nav {
+    width: 100%; height:  60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6%;
+}
+
+header {
+    display: flex; align-items: center;
+}
+
+.navigation__link {
+    display: flex; 
+    list-style: none;
+    font-size: 14px;
+}
+
+.navigation__link li {
+    display: flex; align-items: center; 
+    margin-right: 8px; 
+}
+
+.navigation__link li a {
+    cursor: pointer; padding: 5px;
+    text-decoration: none; color: rgb(9, 116, 25); outline: none;
+}
+
+.signup {
+    border: 1px solid rgb(207, 34, 34); 
+    border-radius: 5px;
+    background-color: rgb(207, 34, 34);
+}
+
+.slideshow {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-color: rgb(220, 230, 222);
+    display: flex; align-items: center; flex-direction: column;
+}
+
+.main-heading, .intro {
+    color: #fff;
+}
+
+.main-heading {
+    color: #fff;
+    width: 300px; height: 90px;
+    position: relative; top: 180px; text-align: center;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.intro {
+    position: relative; top: 190px; text-align: center;
+    padding: 12px; background-color: rgba(0, 0, 0, 0.5);
+    animation: MoveUpDown1 1.5s;
+}
+
+/* Footer Starts */
+footer {
+    display: flex; justify-content: center;
+    width: 100%;
+    /* border: 1px solid #f00;  */
+    margin-top: 30px;
+    background-color: #eee;
+}
+.footer {
+    margin-top: 30px; padding-bottom: 40px;
+    width: 90%;
+    /* border: 2px solid #f00; */
+    background-color: #eee;
+    display: flex;
+    background-color: #eee;
+}
+.footer p {
+    /* border: 1px solid #f00; */
+    margin-bottom: 30px;
+    margin-top: 30px; font-size: 14px;
+}
+.footer button {
+    padding: 2px 20px; cursor: pointer; 
+}
+.left_footer, .middle_footer, .right_footer {
+    width: 33%;
+}
+.links {
+    list-style: none; 
+}
+.links li a {
+    text-decoration: none; color: #000;
+}
+.footer form {
+    /* border: 1px solid #f00; */
+}
+.footer form input {
+    width: 80%;
+    height: 30px;
+    padding-left: 5px; margin-bottom: 5px;
+}
+/* Footer Ends */
+
+@keyframes MoveUpDown1 {
+    0% {
+        top: 250px;
+    }
+    100% {
+        bottom: 180px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 678px) {
+    .footer {
+        width: 95%;
+        display: block;
+    }
+    .left_footer, .middle_footer, .right_footer {
+        width: 100%;
+    }
+    .footer form input {
+        width: 100%;
+    }
+}
